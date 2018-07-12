@@ -1,0 +1,375 @@
+/*-------------------------CSS RESET----------------------*/                                           
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------- RESET ENDS-------------------*/    
+html, body {
+  height:100%;
+}
+body {
+  margin:0px;
+}
+.backColor {
+  background-color: black;
+}
+img {
+  max-width:100%;
+}
+/*----------FONTS STYLES---------*/
+@font-face {
+  src: url(fonts/Hermes-Regular.otf);
+  font-family: hermes;
+}
+@font-face {
+  src: url(fonts/LOW.TTF);
+  font-family:lowrider;
+}
+/*----------NAVIGATION STYLING---------*/
+.nav {
+  background-color:#800000;
+}
+.nav ul {
+  padding: 0.8% 0px;
+  margin:0px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav ul li {
+  display:inline;
+  font-size:1.5rem;
+  margin:0px;
+  font-family:serif;
+}
+.nav a {
+  padding:5px;
+}
+.nav a:link, .nav a:visited {
+  text-decoration:none;
+  color: white;
+}
+.nav a:hover {
+  background-color:black;
+}
+.current {
+  background-color:black;
+}
+/*----------- HOME PAGE STYLING ----------- */
+.hero {
+  background-image:url("images/heronew.jpg");
+  height: 100vh;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:0px;
+}
+.hero h1 {
+  margin:0px;
+  padding-left:60%;
+  padding-top: 10%;
+  font-size: 5rem;
+  color:white;
+  text-align:center;
+  font-family: hermes;
+  text-shadow: 4px 4px 10px #800000;
+}
+.info {
+  text-align:center;
+  font-size: 2.1875rem;
+  background-color:#800000;
+  color: white;
+}
+.info p{
+  margin:0px;
+  padding:2%;
+}
+/*-----HOMEPAGE IMAGES----*/
+.examp1 img, .examp2 img,
+.examp3 img, .examp4 img {
+  display:block;
+  width: 700px;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 5px 5px 10px white;
+}
+/*----HOMEPAGE LABELS----*/
+.label1 p, .label2 p,
+.label3 p, .label4 p {
+  font-size:75px;
+  color:white;
+  text-align:center;
+  font-family:lowrider;
+  margin:10px;
+  text-shadow: 4px 4px 10px #800000;
+
+}
+.button {
+  background-color:white;
+  text-align:center;
+  padding: 15px 32px;
+  border:none;
+  font-size:1.125rem;
+  width:20%;
+  margin: 0% 40% 0% 40%
+}
+.button a:link, .button a:visited {
+  text-decoration:none;
+  color:black;
+}
+/*--------INVENTORY STYLES--------*/
+.inventoryHeading {
+  background-image:url(images/huracan1.jpg);
+  height: 100vh;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:0px;
+}
+.inventoryHeading h2 {
+  color:black;
+  font-size: 2.8125rem;
+  font-family:hermes;
+}
+.inventoryRow {
+  display:flex;
+}
+.inventoryCars h3 {
+  color:white;
+  text-align:center;
+  padding:2%;
+  font-weight:bold;
+}
+.inventoryCars p {
+  color:white;
+  text-align:center;
+  font-weight:bold;
+  padding-bottom:2%;
+}
+.inventoryCars img {
+  display:block;
+  width: 400px;
+  border: white solid 8px;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 5px 5px 10px #800000;
+}
+.inventoryCars img:hover{
+  transform:scale(1.1);
+}
+.inventoryCars {
+  width:50%;
+}
+h2 {
+  font-size:2rem;
+  font-family:hermes;
+  color:white;
+  text-align:center;
+  padding-top:2%;
+}
+/*----------CONTACT STYLES---------*/
+form {
+  margin: 5% 40%;
+  color:white;
+  letter-spacing:0.1rem;
+  margin-left: 30%;
+}
+.formBack {
+  background-color: white;
+  padding:2%;
+  margin: 1% 25% 3% 25%;
+}
+.formBack2 {
+  background-color:black;
+  padding: 5% 0% 5% 0%;
+  margin: 5%;
+}
+.submitForm a:visited, .submitForm a:link {
+  text-decoration:none;
+  color:black;
+}
+  
+/*----------ABOUT STYLES --------*/
+.self {
+  padding-top:2%;
+  padding-bottom:2%;
+}
+.self img {
+  display:block;
+  width:175px;
+  border-radius: 50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.self img:hover {
+    transform: scale(1.3);
+}
+#aboutMe {
+  display:flex;
+  padding-bottom:1%;
+}
+.about {
+  width:50%;
+  height:250px;
+  padding:3%;
+  margin-left:5%;
+  margin-right:5%;
+  background-color:white;
+  text-align:center;
+  font-size:1.5rem;
+  font-weight:bold;
+  color:black;
+  font-family:arial;
+  border-radius:15%;
+  box-shadow: 5px 5px 10px #800000;
+
+}
+/*--------FOOTER STYLES--------*/
+footer {
+  background-color: #800000;
+  text-align:center;
+  color:white;
+  padding:1.2%;
+  width:100%;
+  position:relative;
+  bottom:0;
+  margin-top: 10%;
+}
+footer p {
+  display:inline;
+  font-size: 1.5rem;
+}
+.edu-purpose {
+  font-size:1.1rem;
+  padding-top:0.7%;
+}
+footer a:link, footer a:visited {
+  text-decoration:none;
+  color:white;
+}
+.fab {
+  font-size:1.5rem;
+}
+.recievedText {
+  text-align:center;
+  color:white;
+  margin-top:20%;
+  margin-bottom:9%;
+  font-size:1.5rem;
+  font-weight:bold;
+}
+/*--------Media Queries-------*/
+
+@media screen and (max-width:2000px) {
+  .hero {
+    height: 900px;
+  }
+  .hero h1 {
+    font-size:6rem;
+  }
+  .inventoryHeading {
+    height:900px;
+  }
+}
+@media screen and (max-width:1400px) {
+  .hero {
+    height:650px;
+  }
+  .hero h1 {
+    font-size:5rem;
+  }
+  .inventoryHeading {
+    height: 650px;
+  }
+}
+@media screen and (max-width:750px) {
+  .nav ul li {
+    font-size:1rem;
+  }
+  .nav ul {
+    padding:2%;
+  }   
+  .hero {
+    background-size:cover;
+    height:350px;
+  }
+  .hero h1 {
+    font-size:2rem;
+    padding-top:15%;
+  }
+  .info {
+    font-size:1.8rem;
+  }
+  .examp1 img, .examp2 img,
+  .examp3 img, .examp4 img {
+    width:400px;
+  }  
+  .label1 p, .label2 p,
+  .label3 p, .label4 p {
+    font-size:3.5rem;
+  }
+  .button {
+    width:50%;
+    margin-left:26%;
+  }
+  .inventoryHeading {
+    background-size:cover;
+    height:350px;
+  }
+  .inventoryCars img {
+    width:200px;
+  }
+  .comments {
+    width:100%;
+  }
+  .formBack {
+    margin: 1% 15% 3% 15%;
+  }
+  .about p {
+    font-size:1rem;
+  }
+}
+
+
+    
+
+    
+
+  
